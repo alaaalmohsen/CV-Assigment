@@ -1,0 +1,241 @@
+/* Start Variables */
+:root {
+    --main-color: #06283D;
+    --secondary-color: #256D85;
+    --third-color: #47B5FF;
+    --fourth-color: #DFF6FF;
+    --main-margin: 25px
+}
+/* End Variables */
+/* Start Global Rules */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.3s;
+}
+.container {
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* small */
+@media (min-width: 768px) {
+    .main {
+        width: 750px;
+    }
+}
+/* Medium */
+@media (min-width: 992px) {
+    .main {
+        width: 970px;
+    }
+}
+/* Large */
+@media (min-width: 1200px) {
+    .main {
+        width: 1170px;
+    }
+}
+/* End Global Rules */
+/* Start Component */
+.main {
+    margin: 0 auto;
+}
+.main-heading {
+    text-align: left;
+    position: relative;
+    margin-bottom: var(--main-margin);
+}
+.main-heading::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: var(--fourth-color);
+    bottom: -15px;
+    left: 0;
+}
+.left-block {
+    width: 80%;
+    margin-bottom: var(--main-margin);
+}
+.right-block {
+    width: 80%;
+    padding: 25px 10px 0px 10px;
+    margin-left: var(--main-margin);
+}
+.main-heading-2{
+    color: var(--main-color);
+    font-size: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid black;
+}
+.content-posation{
+    padding-top: var(--main-margin);
+    padding-left: var(--main-margin);
+    font-size: 25px;
+    color: var(--secondary-color);
+}
+/* End Component */
+/* Start main */
+.main .container {
+    background-color: var(--fourth-color);
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    color: white;
+}
+.left {
+    background-color: var(--main-color);
+    padding: 20px 0 5px 30px;
+}
+.left img {
+    border-radius: 50%;
+    margin-bottom: var(--main-margin);
+    position: relative;
+    left: 50%;
+    transform: translateX(-55%);
+    width: 200px;
+}
+/* Start Contact */
+.left .contact .row {
+    display: flex;
+    align-items: center;
+    padding: 10px 0px;
+}
+.left .contact .row i{
+    padding-left: 10px;
+    padding-right: 30px;
+}
+.left .contact .row p{
+    text-align: center;
+}
+/* End Contact */
+/* Start Skills */
+.left .skills ul li{
+    list-style: none;
+    text-align: left;
+    padding: 10px 10px;
+}
+/* End Skills */
+/* Start languages */
+.left .languages ul li{
+    list-style-position: inside;
+    padding: 5px 5px;
+}
+/* End languages */
+/* Start courses */
+.left .courses ul li{
+    list-style: none;
+    text-align: left;
+    padding: 8px 10px;
+    line-height: 1.4;
+}
+/* End courses */
+/* Start Socail */
+.social table {
+    width: 100%;
+}
+.social table tr{
+    display: flex;
+    padding: 20px 30px 10px 0px;
+    justify-content: space-around;
+}
+.social table a {
+    font-size: 35px;
+    color: var(--fourth-color);
+}
+.social table a:hover {
+    font-size: 50px;
+    transition: 0.2s;
+}
+/* End Socail */
+/* End left */
+/* Start Right */
+.right h1{
+    color: var(--main-color);
+    margin-left: var(--main-margin);
+    font-size: 80px;
+    letter-spacing: 20px;
+    margin-bottom: 20px;
+}
+.right h1 span {
+    font-weight: 400;
+    color: var(--secondary-color);
+}
+.right h2 {
+    color: var(--main-color);
+    margin-left: var(--main-margin);
+    letter-spacing: 10px;
+}
+.work-experince ul{
+    font-weight: bold;
+    color: var(--main-color);
+}
+.work-experince .box{
+    display: flex;
+    margin-top: var(--main-margin);
+    margin-bottom: var(--main-margin);
+    margin-left: var(--main-margin);
+}
+.work-experince .heading{
+    width: 550px;
+    padding: 5px;
+    margin-right: 20px;
+}
+.work-experince  h5{
+    font-size: 22px;
+    color: var(--secondary-color);
+    font-weight: 700;
+}
+.work-experince .heading h6{
+    font-size: 14px;
+    margin-top: 10px;
+}
+.work-experince .text{
+    padding: 5px;
+}
+.work-experince .text p{
+    color: #777;
+    margin-top: 8px;
+    font-size: 20px;
+}
+.education .box{
+    display: flex;
+    margin-top: var(--main-margin);
+    margin-bottom: var(--main-margin);
+    margin-left: var(--main-margin);
+    color: var(--main-color);
+}
+.education .heading{
+    width: 550px;
+    padding: 5px;
+    margin-right: 20px;
+}
+.education  h5{
+    font-size: 22px;
+    color: var(--secondary-color);
+    font-weight: 700;
+}
+.education .heading h6{
+    font-size: 14px;
+    margin-top: 10px;
+}
+.education .text{
+    padding: 5px;
+}
+.education .text p{
+    color: #777;
+    margin-top: 8px;
+    font-size: 20px;
+}
+/* End Right */
+/* End  main */
