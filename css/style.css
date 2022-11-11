@@ -160,6 +160,9 @@ body {
 /* End Socail */
 /* End left */
 /* Start Right */
+.right {
+    background-color: var(--fourth-color);
+}
 .right h1{
     color: var(--main-color);
     margin-left: var(--main-margin);
